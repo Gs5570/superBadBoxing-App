@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+html {
+  font-family: 'Raleway', 'Dosis', 'Roboto', sans-serif, system-ui;
+  font-optical-sizing: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+/* paragraph element */
+p {
+  line-height: 1.6; /* Recommended for readability */
+}
