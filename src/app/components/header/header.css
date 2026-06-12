@@ -36,22 +36,6 @@
   --header-h: 126px; /* 100px logo + 13px padding top + 13px padding bottom */
 }
 
-.body-container {
-  padding-top: var(--header-h);
-  min-height: 100vh;
-}
-
-.content-container {
-  position: relative;
-  width: 100%;
-  height: calc(100vh - var(--header-h));
-}
-
-.footer-container {
-  background-color: #111;
-  min-height: 60px;
-}
-
 /* ═══════════════════════════════════════════
    DESKTOP NAV
 ═══════════════════════════════════════════ */
