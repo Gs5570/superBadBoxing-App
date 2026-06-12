@@ -47,7 +47,11 @@
         </p>
       </div>
       <div class="about-img-col">
-        <img src="../Media/father and son.webp" alt="Boxer training in the gym" class="about-img" />
+        <img
+          src="/pages/about/father and son.webp"
+          alt="Boxer training in the gym"
+          class="about-img"
+        />
       </div>
     </div>
   </section>
@@ -67,7 +71,7 @@
   <section class="about-detroit">
     <div class="about-two-col about-two-col--reversed">
       <div class="about-img-col">
-        <img src="../Media/kid-4.webp" alt="Detroit community boxing" class="about-img" />
+        <img src="/pages/about/kid-4.webp" alt="Detroit community boxing" class="about-img" />
       </div>
       <div class="about-text-col">
         <p class="about-section-eyebrow">Detroit Born</p>
@@ -141,8 +145,9 @@
     </p>
     <div class="about-cta-banner-btns">
       <a href="./index.html#contact" class="about-cta-btn about-cta-btn--white">Get Started</a>
-      <a href="./index.html#services" class="about-cta-btn about-cta-btn--outline">View Programs</a>
+      <a routerLink="/program" class="about-cta-btn about-cta-btn--outline">View Programs</a>
     </div>
   </section>
   <app-footer />
 </div>
+<router-outlet />
