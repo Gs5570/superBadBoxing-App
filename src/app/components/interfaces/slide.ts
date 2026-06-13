@@ -1,4 +1,5 @@
 export interface Slide {
-  url: '';
-  title: '';
+  id: number;
+  url: string;
+  title: string;
 }

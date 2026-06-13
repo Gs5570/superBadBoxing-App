@@ -1,0 +1,131 @@
+/*********************
+* services
+***********************/
+/*service section*/
+#service-title-container {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(247, 105, 2);
+  width: 30%;
+  height: 100px;
+  margin: auto;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#service-title {
+  color: white;
+  font-weight: bolder;
+  font-size: clamp(1rem, 3.5vw, 3.5rem) !important; /*text responsiveness. --  our service text*/
+}
+
+#service-description {
+  text-align: center;
+  font-size: clamp(1rem, 2vw, 2rem) !important; /*text responsiveness*/
+  margin: 1.5em 0;
+  width: auto;
+}
+
+/*parent of service*/
+.service-category-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 100vw;
+
+  gap: 1.5em;
+
+  padding: 0 3rem;
+  flex-wrap: wrap;
+}
+
+/* service children */
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  /* flex-wrap: wrap; */
+  flex: 1 1 0;
+  width: 400px;
+  /* height: 1000px; */
+  gap: 0;
+}
+
+.service-name {
+  font-weight: bolder;
+  font-size: clamp(1rem, 1.5vw, 2rem) !important;
+}
+
+.service-img-container {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.service-image {
+  box-shadow: rgba(247, 105, 2, 1) 0px 5px 15px;
+  width: 400px;
+  height: 600px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+  display: block;
+}
+
+.service-details {
+  flex: 1; /* grows to fill, aligning bottoms */
+}
+
+/******************
+* Mission Statement
+*******************/
+.Mission-statement-container {
+  background-color: #111;
+}
+
+.mission-item {
+  /* padding: 0 3em; */
+  width: 65%;
+  margin: auto;
+}
+
+h1 {
+  font-size: clamp(1rem, 4vw, 4rem) !important; /*text responsiveness*/
+  color: aliceblue;
+  text-align: center;
+  padding: 0.5em 0;
+  background-color: rgb(247, 105, 2);
+}
+
+h2 {
+  font-size: clamp(
+    1rem,
+    2vw,
+    2rem
+  ) !important; /*text responsiveness  -- clamp(1.5rem, 2.3vw, 2.3rem)*/
+}
+
+.mission-item-title > h2 {
+  color: rgb(247, 105, 2);
+  font-weight: bold;
+}
+.mission-description {
+  color: aliceblue;
+  font-size: clamp(1rem, 1.5vw, 1.5rem) !important; /*text responsiveness*/
+}
+
+#mission-last-par {
+  margin: 0 0;
+  padding-bottom: 1em;
+}
+
+.mission-word-color {
+  color: rgb(247, 105, 2);
+}
+
+.mission-description > li {
+  line-height: 1.6; /* Recommended for readability */
+}

@@ -1,1 +1,18 @@
-<p>carousel works!</p>
+<c-carousel>
+  <c-carousel-indicators />
+  <c-carousel-inner>
+    @for (slide of slides; track slide.url) {
+      <c-carousel-item>
+        <img
+          [src]="slide.url"
+          alt="{{ slide.title }}"
+          class="d-block w-100"
+          [attr.loading]="$first ? 'eager' : 'lazy'"
+          [attr.fetchpriority]="$first ? 'high' : null"
+        />
+      </c-carousel-item>
+    }
+  </c-carousel-inner>
+  <c-carousel-control [routerLink] caption="Previous" direction="prev" />
+  <c-carousel-control [routerLink] caption="Next" direction="next" />
+</c-carousel>
